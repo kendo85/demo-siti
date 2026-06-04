@@ -1,12 +1,12 @@
 {
   "rewrites": [
     {
-      "source": "/:categoria/:slug/(.*)",
-      "destination": "/:categoria/:slug/index.html"
+      "source": "/prospects/:categoria/:slug/(.*)",
+      "destination": "/prospects/:categoria/:slug/index.html"
     },
     {
-      "source": "/:categoria/:slug",
-      "destination": "/:categoria/:slug/index.html"
+      "source": "/prospects/:categoria/:slug",
+      "destination": "/prospects/:categoria/:slug/index.html"
     }
   ],
   "headers": [
