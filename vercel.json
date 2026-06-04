@@ -1,0 +1,23 @@
+{
+  "rewrites": [
+    {
+      "source": "/:categoria/:slug/(.*)",
+      "destination": "/:categoria/:slug/index.html"
+    },
+    {
+      "source": "/:categoria/:slug",
+      "destination": "/:categoria/:slug/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
+      ]
+    }
+  ]
+}
